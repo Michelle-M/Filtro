@@ -1,0 +1,131 @@
+/*font-family: 'Open Sans', sans-serif;
+font-family: 'Fjalla One', sans-serif;*/
+
+body {
+  margin: 0;
+  background: rgb(134,125,129);
+  background: radial-gradient(circle, rgba(134,125,129,1) 0%, rgba(10,10,10,1) 100%);
+}
+
+/*-------SUPERIOR--------*/
+
+.buscador {
+  background-color: #e62305;
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.izquierda {
+  display: flex;
+  margin-left: 20px;
+  align-items: center;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.nombre {
+  font-family: 'Fjalla One', sans-serif;
+  color: white;
+  font-size: 24px;
+  text-transform: uppercase;
+  margin-left: 10px;
+}
+
+.derecha {
+  margin-right: 20px;
+}
+
+input {
+  width: 300px;
+  height: 33px;
+  font-size: 15px;
+  border: 1px solid lightgrey;
+  border-radius: 6px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+.boton-filtro {
+  width: 60px;
+  height: 35px;
+  border: none;
+  border-radius: 6px;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  font-size: 15px;
+}
+
+/*---------BANNER---------*/
+
+.titulo-principal {
+  width: 100vw;
+  height: 25vh;
+  background-image: url(img/bg.jpg);
+  background-position-x: 50%;
+}
+
+h1 {
+  margin: 0;
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 45px;
+  color: #e62305;
+  text-align: center;
+  text-transform: uppercase;
+  padding-top: 50px;
+}
+
+/*-----LISTADO------*/
+
+#lista-de-productos {
+  /*width: 58%;
+  height: 100vh;
+  background-color: aquamarine;*/
+  display: flex;
+  /*flex-direction: column;*/
+}
+
+.producto {
+  width: 180px;
+  height: 160px;
+  margin: 8px;
+  border: 1px solid lightgrey;
+  background-color: white;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.titulo {
+  font-family: 'Open Sans', sans-serif;
+  color: #e62305;
+  font-weight: bold;
+  margin: 5px;
+}
+  
+.producto img {
+  width: 95%;
+  height: auto
+}
+
+.boton-negro {
+  width: 120px;
+  height: 25px;
+  background-color: black;
+  font-family: 'Open Sans', sans-serif;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  align-self: initial;
+  margin: 6px;
+}
+
+.boton-negro:hover, .boton-filtro:hover {
+  background-color: dimgray;
+}
