@@ -129,5 +129,6 @@ h1 {
 }
 
 .boton-negro:hover, .boton-filtro:hover {
-  background-color: dimgray;
+  cursor: pointer;
+  /*background-color: dimgray;*/
 }
