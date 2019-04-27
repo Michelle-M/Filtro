@@ -47,17 +47,38 @@ var botonDeFiltro = document.querySelector("button")
   
 botonDeFiltro.onclick = function() {
   // primero, recorremos con un while todos los "hijos" del listado y los borramos
-  /*while (listado.firstChild) {
+  while (listado.firstChild) {
     listado.removeChild(listado.firstChild);
-  }*/
+  }
   
   // despues les toca a uds el resto :)
-  var busqueda = document.querySelector('input');
-  
+
+  var input = document.querySelector('input');
+  var busqueda = input.value;
+
   for ( var i = 0; i < productos.length; i++ ) {
-    if ( busqueda.value !== productos[i].tipo ) {
-      console.log('Recorre a los distintos modelos');
-      listado.removeChild(listado.firstChild); //si no busco aj 4, solo deja a dos modelos 4 pero si busco aj4 muestra a los 3 modelos
+    if ( busqueda == productos[i].nombre ) {
+      
+      var div = document.createElement("div")
+      div.classList.add("producto");
+    
+      var titulo = document.createElement("p")
+      titulo.classList.add("titulo");
+      titulo.textContent = productos[i].nombre;
+      
+      var imagen = document.createElement("img");
+      imagen.setAttribute('src', productos[i].img);
+  
+      var botonVer = document.createElement('button');
+      botonVer.classList.add('boton-negro');
+      botonVer.textContent = 'VER';
+    
+      div.appendChild(titulo)
+      div.appendChild(imagen)
+      div.appendChild(botonVer)
+    
+      // Agregamos el div al listado 
+      listado.appendChild(div)
     }
   }
 }
